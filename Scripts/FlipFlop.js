@@ -46,12 +46,16 @@ function init() {
      blockFrontImages = ["Images/pokemon1.gif",
         "Images/pokemon2.gif",
         "Images/pokemon3.gif",
-        "Images/pokemon4.gif",
-        "Images/pokemon5.gif",
-        "Images/pokemon6.gif",
-        "Images/pokemon7.gif",
-        "Images/pokemon8.gif",
-        "Images/pokemon9.gif"];
+        "Images/pokemon4.gif"];
+    //  blockFrontImages = ["Images/pokemon1.gif",
+    //     "Images/pokemon2.gif",
+    //     "Images/pokemon3.gif",
+    //     "Images/pokemon4.gif",
+    //     "Images/pokemon5.gif",
+    //     "Images/pokemon6.gif",
+    //     "Images/pokemon7.gif",
+    //     "Images/pokemon8.gif",
+    //     "Images/pokemon9.gif"];
     // init();
     startTimer(minutes, display);
     blockFrontImagesAll = blockFrontImages.concat(blockFrontImages);
