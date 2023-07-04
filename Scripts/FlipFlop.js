@@ -34,7 +34,8 @@ function resetGame() {
 function init() { 
     //initializing values
     gameOn = true;
-     memoryBlockArr = new Array(18);
+//  memoryBlockArr = new Array(18);      chỉnh số block để win
+    memoryBlockArr = new Array(3);
      blocksArray = [];
      blockFrontImagesAll = [];
      shuffledBlocks = [];
