@@ -41,7 +41,7 @@ function init() {
      currentlyFlippedArr = [];
      matchedCount = 0;     
      flipCounter = 0;
-     var minutes = 50;
+     var minutes = 1;
      var display = document.getElementById("Timer");
      blockFrontImages = ["Images/pokemon1.gif",
         "Images/pokemon2.gif",
@@ -154,7 +154,7 @@ function blocksMatched() {
     if (matchedCount === memoryBlockArr.length) {
        // if (matchedCount === 2) {
         var wait = ms => new Promise(resolve => setTimeout(resolve, ms));
-        Promise.resolve(1000).then(() => wait(1000)).then(() => { showWin(); });        
+       Promise.resolve(1000).then(() => wait(1000)).then(() => { showWin(); });        
     }
 }
 
@@ -174,7 +174,7 @@ function showWin() {
 }
 
 function gameOver() {
-   // hideElements();
+    hideElements();
     gameOn = false;
     document.getElementById('gameOverText').classList.add('visible');
     clearInterval(countdown);
